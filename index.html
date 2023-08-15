@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form class="block">
+            <h2>Registration Form</h2>
+
+            <div>
+            <input class="InputTypeDef" onkeyup="NameValidation()" id="name" placeholder="First name" type="text">
+            <p class="p" id="nameP"></p>
+            </div>
+
+            <div>
+            <input class="InputTypeDef" onkeyup="LastNameValidation()" id="name2" placeholder="Last name" type="text">
+            <p  class="p" id="lastNameP"></p>
+            </div>
+
+            <div>
+            <input class="InputTypeDef" onkeyup="EmailValidation()" id="email" placeholder="Email" type="text">
+            <p  class="p" id="emailP"></p>
+            </div>
+
+            <div>
+            <input class="InputTypeDef" onkeyup=" Pasw1Validation()" id="pasword" placeholder="Password" type="password">
+            <p  class="p" id="pasP1"></p>
+            </div>
+
+            <div>
+            <input class="InputTypeDef" onkeyup="Pasw2Validation()" id="pasword2" placeholder="Repeat Password" type="password">
+            <p  class="p" id="pasP2"></p>
+            </div>
+
+            <div class="checkDiv">
+                <input onchange="Check1Validation()" class="InputTypeCheck" id="check1" type="checkbox">
+                <p id="check1P">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+            <div class="checkDiv">
+                <input onchange="Check2Validation()" class="InputTypeCheck" id="check2" type="checkbox">
+                <p id="check2P">Lorem, ipsum dolor sit amet </p>
+            </div>
+
+            <button>Register</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
